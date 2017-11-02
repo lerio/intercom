@@ -1,0 +1,22 @@
+{
+  "name": "intercom",
+  "version": "0.0.1",
+  "description": "intercom code challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lerio/intercom.git"
+  },
+  "author": "lerio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lerio/intercom/issues"
+  },
+  "homepage": "https://github.com/lerio/intercom#readme",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
