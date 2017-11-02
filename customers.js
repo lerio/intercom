@@ -37,6 +37,7 @@ const customers = () => {
     let customers = {}
     let userIDs = []
 
+    // storing close-by customers
     fileContent && fileContent.split("\n").forEach(function (line) {
         let customer = JSON.parse(line)
         if (isWithinDistance(latOffice, lngOffice, customer.latitude, customer.longitude, distanceInKM)) {
@@ -45,13 +46,16 @@ const customers = () => {
         }
     })
 
+    // sorting them by user_id asc
     userIDs.sort((a, b) => { return a - b })
 
+    // printing their id and name
     userIDs.forEach(function (key) {
         console.log(`${key}: ${customers[key]}`)
     });
 }
 
+// exporting functions for testing purposes
 module.exports = {
     customers,
     deg2rad,
